@@ -1,0 +1,7 @@
+Other_Files/
+.env
+Sqlite/
+*.jpg
+*.png
+.venv
+
