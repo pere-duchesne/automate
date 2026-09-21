@@ -57,7 +57,7 @@ findable — it's not meant to imply you need to go in order.
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/pere-duchesne/automate.git
 cd automate
 python -m venv .venv
 source .venv/bin/activate
