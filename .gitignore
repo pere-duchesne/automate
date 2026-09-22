@@ -1,6 +1,9 @@
 Other_Files/
 .env
 Sqlite/
+input/
+output/
+converted.json
 *.jpg
 *.png
 .venv

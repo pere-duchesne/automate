@@ -1,2 +1,5 @@
 pyperclip
 dotenv
+pdfplumber
+pymupdf
+pytesseract
