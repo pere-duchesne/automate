@@ -24,3 +24,4 @@ print(search_method_on_text)
 search_method_on_number=pattern.search(number)
 print(search_method_on_number)
 
+#.findall()
