@@ -7,4 +7,5 @@ converted.json
 *.jpg
 *.png
 .venv
+*.swp
 
