@@ -8,4 +8,4 @@ converted.json
 *.png
 .venv
 *.swp
-
+*.log
