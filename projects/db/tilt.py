@@ -45,8 +45,14 @@ if what =='i':
         placeholders=', '.join('?' for _ in values_to_insert)
         sql=f'INSERT INTO learning_notebook ({column_names}) VALUES ({placeholders})'
         cursor.execute(sql, tuple(values_to_insert.values()))
-        print(f'New entry {values_to_insert} inserted into the database.\nBye.')
+        logthis=f'New entry {values_to_insert} inserted into the database.\nBye.'
 
-
+log_file='log.log'
+if not os.path.exists(log_file):
+    with open(log_file, 'w') as file:
+        file.write(logthis)
+else:
+    with open(log_file, 'a') as file:
+        file.write(logthis)
 
 
