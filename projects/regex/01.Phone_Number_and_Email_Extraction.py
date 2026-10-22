@@ -32,13 +32,23 @@ phone_regex=re.compile(r'''(
 #print(phone_regex.search(phone3))
 
 email_regex=re.compile(r'''(
-[a-zA-Z0-9.-+_%]* #address
+[a-zA-Z0-9.-_]* #address
 @ #at symbol
 [a-zA-Z0-9.-_]*\.\w{2,3} #domain
 )''',re.VERBOSE)
 
-my_email='me@somedomain.me'
-your_email='your_address.something@else.com'
+#my_email='me@somedomain.me'
+#your_email='your_address.something@else.com'
 
-print(email_regex.search(my_email))
-print(email_regex.search(your_email))
+#print(email_regex.search(my_email))
+#print(email_regex.search(your_email))
+
+text=str(pyperclip.paste())
+
+captured_phones=phone_regex.findall(text)
+captured_phones=[cap[0] for cap in captured_phones]
+
+captured_emails=email_regex.findall(text)
+captured={'phones':captured_phones,'emails':captured_emails}
+
+print(captured)
