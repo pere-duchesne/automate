@@ -13,3 +13,5 @@ for h in Ha:
     print(f'char:{h}, pattern:{pattern_single}, returns:{pattern_single.search(h)}')
     print(f'char:{h}, pattern:{pattern_multi}, returns:{pattern_multi.search(h)}')
     print(f'char:{h}, pattern:{pattern_zero_or_many}, returns:{pattern_zero_or_many.findall(h)}')
+
+#Greedy and nongreedy matching
